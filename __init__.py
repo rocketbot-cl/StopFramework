@@ -47,6 +47,7 @@ try:
                 SetVar(var_, conx) #type: ignore
 
             except:
+                SetVar(var_, False) #type: ignore
                 if res.status_code != 200:
                     exc = res.json()['message'] if res.json()['message'] else "Password o E-mail incorrectos"
                     raise Exception(exc)
@@ -65,7 +66,7 @@ try:
             print(res.status_code)
             print(res.text)
             if res.status_code != 200:
-                
+                SetVar(var_, False) #type: ignore
                 exc = res.json()['message'] if res.json()['message'] else "El API Key es incorrecto"
                 raise Exception(exc)
             else:
@@ -86,6 +87,7 @@ try:
                 SetVar(var_, conx)
             except:
                 if res.status_code != 200:
+                    SetVar(var_, False) #type: ignore
                     exc = res.json()['message'] if res.json()['message'] else "Password o E-mail incorrectos"
                     raise Exception(exc)
                 raise Exception("Password o E-mail incorrectos")

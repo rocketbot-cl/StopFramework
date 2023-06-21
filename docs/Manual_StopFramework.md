@@ -4,7 +4,7 @@ Module for Rocketbot Stop Framework
 
 *Read this in other languages: [English](Manual_StopFramework.md), [Português](Manual_StopFramework.pr.md), [Español](Manual_StopFramework.es.md)*
   
-![banner](imgs/Banner_StopFramework.png o jpg)
+![banner](imgs/Banner_StopFramework.jpg)
 ## How to install this module
   
 To install the module in Rocketbot Studio, it can be done in two ways:
